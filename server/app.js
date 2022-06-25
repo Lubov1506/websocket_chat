@@ -9,14 +9,14 @@ app.use(cors())
 app.get('/', async (req,res,next)=>{
     try{
         const messages = await Message.find({})
-        res.status(200).send(messages)
+        res.status(200).send({data: messages})
     }catch(err){
         next(err)
     }
 })
 
 app.use((err,req,res,next)=>{
-    res.status(500), send('Some error')
+    res.status(500), send('Some server error')
 })
 
 module.exports = app;

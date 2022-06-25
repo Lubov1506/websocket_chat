@@ -9,8 +9,8 @@ db: {
 },
 port: 5000,
 SOCKET_EVENTS: {
-    NEW_MESSAGE: 'new message',
-    NEW_MESSAGE_ERROR: 'new message error'
+    NEW_MESSAGE: 'new_message',
+    NEW_MESSAGE_ERROR: 'new_message_error'
 }
 }
 
